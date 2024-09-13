@@ -1,0 +1,9 @@
+if BOARD_EPAPER_NAMETAG
+
+config BOARD
+	default "epaper_nametag"
+
+config BT_CTLR
+	default BT
+
+endif # BOARD_EPAPER_NAMETAG

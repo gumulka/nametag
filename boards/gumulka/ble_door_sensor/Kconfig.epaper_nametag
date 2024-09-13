@@ -1,0 +1,3 @@
+config BOARD_EPAPER_NAMETAG
+	bool "BLE e-Paper Nametag"
+	select SOC_NRF52832_QFAA

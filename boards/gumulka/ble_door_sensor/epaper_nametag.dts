@@ -1,0 +1,137 @@
+/*
+ * Copyright (c) 2024 Fabian Pflug
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/dts-v1/;
+#include <nordic/nrf52832_qfaa.dtsi>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+
+/ {
+	model = "e-Paper Nametag";
+
+	chosen {
+		zephyr,console = &uart0;
+		zephyr,shell-uart = &uart0;
+		zephyr,uart-mcumgr = &uart0;
+		zephyr,bt-mon-uart = &uart0;
+		zephyr,bt-c2h-uart = &uart0;
+		zephyr,sram = &sram0;
+		zephyr,flash = &flash0;
+		zephyr,code-partition = &slot0_partition;
+	};
+
+	aliases {
+		led0 = &led0;
+		sw0 = &button;
+		watchdog0 = &wdt0;
+	};
+
+	leds {
+		compatible = "gpio-leds";
+		led0: led_0 {
+			gpios = <&gpio0 11 GPIO_ACTIVE_HIGH>;
+			label = "User LED";
+		};
+	};
+
+	buttons {
+		compatible = "gpio-keys";
+		button: button0 {
+			gpios = <&gpio0 31 GPIO_ACTIVE_LOW>;
+			label = "User Button";
+			zephyr,code = <INPUT_KEY_1>;
+		};
+	};
+};
+
+
+&adc {
+	#address-cells = <1>;
+	#size-cells = <0>;
+	status = "okay";
+
+	channel@1 {
+		reg = <1>;
+		zephyr,gain = "ADC_GAIN_1_6";
+		zephyr,reference = "ADC_REF_INTERNAL";
+		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+		zephyr,input-positive = <NRF_SAADC_VDD>;
+		zephyr,resolution = <12>;
+	};
+};
+
+&uicr {
+	gpio-as-nreset;
+};
+
+&gpiote {
+	status = "okay";
+};
+
+&gpio0 {
+	status = "okay";
+};
+
+&uart0 {
+	compatible = "nordic,nrf-uarte";
+	current-speed = <115200>;
+	status = "okay";
+	pinctrl-0 = <&uart0_default>;
+	pinctrl-1 = <&uart0_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+
+&flash0 {
+
+	partitions {
+		compatible = "fixed-partitions";
+		#address-cells = <1>;
+		#size-cells = <1>;
+
+		boot_partition: partition@0 {
+			label = "mcuboot";
+			// 24kByte
+			reg = <0x00000000 0x06000>;
+		};
+		slot0_partition: partition@6000 {
+			label = "image-0";
+			// 232kByte
+			reg = <0x00006000 0x3A000>;
+		};
+		slot1_partition: partition@40000 {
+			label = "image-1";
+			// 232kByte
+			reg = <0x00040000 0x3A000>;
+		};
+		scratch_partition: partition@7a000 {
+			label = "image-scratch";
+			// 20kByte
+			reg = <0x0007A000 0x05000>;
+		};
+		storage_partition: partition@7f000 {
+			label = "storage";
+			// 4kByte
+			reg = <0x0007F000 0x00001000>;
+		};
+	};
+};
+
+
+&pinctrl {
+	uart0_default: uart0_default {
+		group1 {
+			psels = <NRF_PSEL(UART_TX, 0, 26)>,
+				<NRF_PSEL(UART_RX, 0, 29)>;
+		};
+	};
+
+	uart0_sleep: uart0_sleep {
+		group1 {
+			psels = <NRF_PSEL(UART_TX, 0, 26)>,
+				<NRF_PSEL(UART_RX, 0, 29)>;
+			low-power-enable;
+		};
+	};
+};

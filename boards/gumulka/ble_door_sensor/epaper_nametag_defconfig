@@ -1,0 +1,5 @@
+# Enable MPU
+CONFIG_ARM_MPU=y
+
+# Use internal oscillator
+CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y
