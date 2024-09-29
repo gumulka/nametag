@@ -10,7 +10,7 @@ int clear_display(const struct device *const display)
 	int err;
 	display_blanking_on(display);
 
-	err = cfb_framebuffer_clear(display, false);
+	err = cfb_framebuffer_clear(display, true);
 	if (err) {
 		LOG_WRN("Framebuffer clear error=%d", err);
 		return err;

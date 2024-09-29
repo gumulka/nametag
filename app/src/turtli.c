@@ -1,4 +1,5 @@
 #include "nametag.h"
+#include "image.h"
 #include <zephyr/display/cfb.h>
 
 #define turtli_width  43
@@ -32,49 +33,31 @@ static char turtli_light_grey_bits[] = {
 	0x00, 0xc0, 0xfc, 0x00, 0x00, 0x00, 0x00, 0x40, 0xf8, 0x01, 0x00, 0x00, 0x00, 0x00, 0xe0,
 	0x03, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
 
-static int draw_pixel(const struct device *const display, int x, int y, int factor)
-{
-	struct cfb_position pixel;
-	for (int i_x = 0; i_x < factor; i_x++) {
-		for (int i_y = 0; i_y < factor; i_y++) {
-			pixel.x = x + i_x;
-			pixel.y = y + i_y;
-			cfb_draw_point(display, &pixel);
-		}
-	}
-	return 0;
-}
+#define TURTLI_POS_X  150
+#define TURTLI_POS_Y  50
+#define TURTLY_FACTOR 3
 
-static int draw_image(const struct device *const display, int x_pos, int y_pos, int width,
-		      int height, int factor, char *data)
-{
-	int width_offset = (width + 7) / 8;
-	width_offset *= 8;
-	for (int x = 0; x < width; x++) {
-		for (int y = 0; y < height; y++) {
-
-			int pos = y * width_offset + x;
-			int bit = pos % 8;
-			pos /= 8;
-			if (data[pos] >> bit & 1) {
-				draw_pixel(display, x * factor + x_pos, y * factor + y_pos, factor);
-			}
-		}
-	}
-	return 0;
-}
-
-int draw_turtli(const struct device *const display, int x, int y, int factor)
+int fabilicious_turtli(const struct device *const display)
 {
 	int err;
-	draw_image(display, x, y, turtli_width, turtli_height, factor, turtli_light_grey_bits);
+	draw_image(display, TURTLI_POS_X, TURTLI_POS_Y, turtli_width, turtli_height, TURTLY_FACTOR,
+		   turtli_light_grey_bits);
 	cfb_framebuffer_finalize(display);
 	err = cfb_framebuffer_clear(display, true);
 	err = cfb_framebuffer_clear(display, true);
-	draw_image(display, x, y, turtli_width, turtli_height, factor, turtli_dark_grey_bits);
+	draw_image(display, TURTLI_POS_X, TURTLI_POS_Y, turtli_width, turtli_height, TURTLY_FACTOR,
+		   turtli_dark_grey_bits);
 	cfb_framebuffer_finalize(display);
 	err = cfb_framebuffer_clear(display, true);
 	err = cfb_framebuffer_clear(display, true);
-	draw_image(display, x, y, turtli_width, turtli_height, factor, turtli_black_bits);
+	draw_image(display, TURTLI_POS_X, TURTLI_POS_Y, turtli_width, turtli_height, TURTLY_FACTOR,
+		   turtli_black_bits);
+	cfb_set_kerning(display, 0);
+	cfb_framebuffer_set_font(display, 2);
+	cfb_draw_text(display, "Fabilicious", 25, 10);
+	cfb_framebuffer_set_font(display, 1);
+	cfb_draw_text(display, "Ich mag", 25, 55);
+	cfb_draw_text(display, "kuscheln", 25, 80);
+	cfb_framebuffer_finalize(display);
 	return err;
 }

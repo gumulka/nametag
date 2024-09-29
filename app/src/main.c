@@ -8,8 +8,37 @@
 LOG_MODULE_REGISTER(main, CONFIG_APP_LOG_LEVEL);
 
 static const struct gpio_dt_spec led = GPIO_DT_SPEC_GET(DT_ALIAS(led0), gpios);
+static const struct gpio_dt_spec button = GPIO_DT_SPEC_GET_OR(DT_ALIAS(sw0), gpios, {0});
+static struct gpio_callback button_cb_data;
 
 static const struct device *const display = DEVICE_DT_GET(DT_CHOSEN(zephyr_display));
+
+static int current_image = 0;
+
+typedef int (*image_display)(const struct device *const display);
+
+image_display images[10] = {
+	serious_name, serious_nick,     serious_full_name,
+	lgbtq_name,   lgbtq_name_extra, fabilicious_turtli,
+};
+
+static void set_display(struct k_work *_work)
+{
+	clear_display(display);
+	if (current_image < ARRAY_SIZE(images) && images[current_image]) {
+		images[current_image](display);
+	} else {
+		current_image = -1;
+	}
+}
+K_WORK_DELAYABLE_DEFINE(set_display_work, set_display);
+
+void button_pressed(const struct device *dev, struct gpio_callback *cb, uint32_t pins)
+{
+	printk("Button pressed at %" PRIu32 "\n", k_cycle_get_32());
+	current_image++;
+	k_work_reschedule(&set_display_work, K_MSEC(1000));
+}
 
 int main(void)
 {
@@ -37,31 +66,29 @@ int main(void)
 		return ret;
 	}
 
-	clear_display(display);
-	serious_name(display);
-
-	k_msleep(1000 * 20);
-
-	clear_display(display);
-	lgbtq_name(display);
-
-	k_msleep(1000 * 20);
-
-	clear_display(display);
-
-	draw_turtli(display, 150, 50, 3);
-	cfb_set_kerning(display, 0);
-	cfb_framebuffer_set_font(display, 2);
-	cfb_draw_text(display, "Fabilicious", 25, 10);
-	cfb_framebuffer_set_font(display, 1);
-	cfb_draw_text(display, "Ich mag", 25, 55);
-	cfb_draw_text(display, "kuscheln", 25, 80);
-	cfb_framebuffer_finalize(display);
-
-	while (true) {
-		gpio_pin_toggle_dt(&led);
-		k_msleep(500);
+	if (!gpio_is_ready_dt(&button)) {
+		printk("Error: button device %s is not ready\n", button.port->name);
+		return -ENODEV;
 	}
+
+	ret = gpio_pin_configure_dt(&button, GPIO_INPUT);
+	if (ret != 0) {
+		printk("Error %d: failed to configure %s pin %d\n", ret, button.port->name,
+		       button.pin);
+		return 0;
+	}
+
+	ret = gpio_pin_interrupt_configure_dt(&button, GPIO_INT_EDGE_TO_ACTIVE);
+	if (ret != 0) {
+		printk("Error %d: failed to configure interrupt on %s pin %d\n", ret,
+		       button.port->name, button.pin);
+		return 0;
+	}
+
+	gpio_init_callback(&button_cb_data, button_pressed, BIT(button.pin));
+	gpio_add_callback(button.port, &button_cb_data);
+
+	k_work_reschedule(&set_display_work, K_MSEC(1000));
 
 	return 0;
 }

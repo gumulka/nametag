@@ -5,9 +5,11 @@
 #include <zephyr/logging/log.h>
 LOG_MODULE_REGISTER(serious_name, CONFIG_APP_LOG_LEVEL);
 
-int serious_name(const struct device *const display)
+static int serious_name_show(const struct device *const display, char *name)
 {
 	int err;
+
+	uint8_t width, heigth;
 
 	err = cfb_set_kerning(display, 0);
 	if (err) {
@@ -17,7 +19,11 @@ int serious_name(const struct device *const display)
 	if (err) {
 		return err;
 	}
-	err = cfb_draw_text(display, "Fabian Pflug", 25, 40);
+	cfb_get_font_size(display, 2, &width, &heigth);
+	int num_chr = strlen(name);
+	int position = (296 - num_chr * width) / 2;
+
+	err = cfb_draw_text(display, name, position, 40);
 	if (err) {
 		return err;
 	}
@@ -36,4 +42,19 @@ int serious_name(const struct device *const display)
 	}
 
 	return 0;
+}
+
+int serious_name(const struct device *const display)
+{
+	return serious_name_show(display, "Fabian");
+}
+
+int serious_nick(const struct device *const display)
+{
+	return serious_name_show(display, "Fabian/Gumulka");
+}
+
+int serious_full_name(const struct device *const display)
+{
+	return serious_name_show(display, "Fabian Pflug");
 }

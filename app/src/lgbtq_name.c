@@ -5,18 +5,10 @@
 #include <zephyr/logging/log.h>
 LOG_MODULE_REGISTER(lgbtq_name, CONFIG_APP_LOG_LEVEL);
 
-int lgbtq_name(const struct device *const display)
+int lgbtq_name_display(const struct device *const display, bool with_umarmungen)
 {
 	int err;
-
-	display_blanking_on(display);
-
-	err = cfb_framebuffer_clear(display, true);
-	if (err) {
-		LOG_WRN("Framebuffer clear error=%d", err);
-		return err;
-	}
-	display_blanking_off(display);
+	int y_pos = 10;
 
 	err = cfb_set_kerning(display, 0);
 	if (err) {
@@ -26,7 +18,10 @@ int lgbtq_name(const struct device *const display)
 	if (err) {
 		return err;
 	}
-	err = cfb_draw_text(display, "Fabian Pflug", 25, 10);
+	if (!with_umarmungen) {
+		y_pos += 10;
+	}
+	err = cfb_draw_text(display, "Fabian Pflug", 25, y_pos);
 	if (err) {
 		return err;
 	}
@@ -35,7 +30,8 @@ int lgbtq_name(const struct device *const display)
 	if (err) {
 		return err;
 	}
-	err = cfb_draw_text(display, "er/ihm", 110, 45);
+	y_pos += 35;
+	err = cfb_draw_text(display, "er/ihm", 110, y_pos);
 	if (err) {
 		return err;
 	}
@@ -48,13 +44,22 @@ int lgbtq_name(const struct device *const display)
 	if (err) {
 		return err;
 	}
-	err = cfb_draw_text(display, "Kinky/Poly/Allo-Aro", 15, 80);
+
+	y_pos += 35;
+	if (!with_umarmungen) {
+		y_pos += 10;
+	}
+	err = cfb_draw_text(display, "Kinky/Poly/Allo-Aro", 15, y_pos);
 	if (err) {
 		return err;
 	}
-	err = cfb_draw_text(display, "Ich liebe Umarmungen", 10, 110);
-	if (err) {
-		return err;
+
+	if (with_umarmungen) {
+		y_pos += 30;
+		err = cfb_draw_text(display, "Ich liebe Umarmungen", 10, y_pos);
+		if (err) {
+			return err;
+		}
 	}
 
 	err = cfb_framebuffer_finalize(display);
@@ -63,4 +68,14 @@ int lgbtq_name(const struct device *const display)
 	}
 
 	return 0;
+}
+
+int lgbtq_name(const struct device *const display)
+{
+	return lgbtq_name_display(display, false);
+}
+
+int lgbtq_name_extra(const struct device *const display)
+{
+	return lgbtq_name_display(display, true);
 }
