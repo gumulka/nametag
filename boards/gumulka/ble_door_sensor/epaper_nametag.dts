@@ -63,6 +63,7 @@
 			compatible = "waveshare,2_9_in", "solomon,ssd1680";
 			mipi-max-frequency = <2000000>;
 			reg = <0>;
+			rotation= <180>;
 			width = <296>;
 			// even though it is only a 128 display, we need to have an additional 8 lines here
 			// because the driver does not have support for the Source Output Mode (CMD 0x21)
