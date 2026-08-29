@@ -3689,7 +3689,7 @@
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "fa107adb-5e1b-4c1d-8718-5674f5e8b831")
+			(uuid "bfbb74db-8f91-4c3f-a4e0-4e7e8a4249da")
 			(effects
 				(font
 					(size 1 1)
@@ -3701,7 +3701,7 @@
 			(at 0 1 -135)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "5dd51152-a780-471e-b0f9-cf87a03cfcf2")
+			(uuid "cf419c26-dab4-4e7d-be3e-bdb0becd8a8f")
 			(effects
 				(font
 					(size 1 1)
@@ -3714,7 +3714,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "382c4811-bd99-4842-abda-2bc3106acd20")
+			(uuid "bfd0af43-72fa-4246-9581-192cecb3361e")
 			(effects
 				(font
 					(size 1 1)
@@ -3727,7 +3727,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a67cbd1a-749f-4896-88ff-1530e593bf27")
+			(uuid "4855fab0-8a66-470a-9327-dee2ec3c9acd")
 			(effects
 				(font
 					(size 1 1)
@@ -3740,7 +3740,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1a75ef6a-59b9-490a-bb6c-2c8f8f792439")
+			(uuid "00c67e15-de2f-411a-a7ce-455ff9e2f82d")
 			(effects
 				(font
 					(size 1 1)
@@ -3753,6 +3753,36 @@
 		(sheetname "Root")
 		(sheetfile "nametag.kicad_sch")
 		(attr smd)
+		(fp_line
+			(start -1 0.5)
+			(end -1 -2.3)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "5f6896e5-1610-46dc-be44-79bb25392b20")
+		)
+		(fp_line
+			(start 1 -2.3)
+			(end 1 0.5)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "337eadf2-2a9c-4d33-a374-174a10ce9298")
+		)
+		(fp_line
+			(start -1 -2.3)
+			(end 1 -2.3)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "6cafd17d-a48f-4774-953c-33ba7f2ed13f")
+		)
 		(fp_poly
 			(pts
 				(xy -0.9 -0.9) (xy 0.9 -0.9) (xy 0.9 0.9) (xy -0.9 0.9)
@@ -3763,13 +3793,13 @@
 			)
 			(fill none)
 			(layer "Edge.Cuts")
-			(uuid "f87adf21-59f7-4789-a7f4-e72c526aaf7b")
+			(uuid "9141f831-26aa-4324-8e09-552074d3958c")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 -135)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "2b51cfae-ed43-4ea4-85c6-b7b9b8ada08d")
+			(uuid "e6926cd8-febd-413e-bdd4-35b6840e0b8b")
 			(effects
 				(font
 					(size 1 1)
@@ -3786,7 +3816,7 @@
 			(pinfunction "K")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "df80bf15-2247-4e88-8b5c-76e4f3671713")
+			(uuid "ddb7ed93-7144-44bd-b605-0bd548a1d279")
 		)
 		(pad "2" smd roundrect
 			(at 0 1.550001 225)
@@ -3797,7 +3827,7 @@
 			(pinfunction "A")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "e4aef95f-49e1-4d52-9883-cfa1683efbf8")
+			(uuid "5793f424-b09b-402d-8235-c422f516b0c7")
 		)
 		(model "${KIPRJMOD}/libraries/g-LED_SMD.pretty/LTST-C230.step"
 			(offset
@@ -4290,7 +4320,7 @@
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "b0355aab-af79-4a78-b62c-2c49655c19fc")
+			(uuid "18cad5d9-f27d-48c4-a2ad-85d1ed64187f")
 			(effects
 				(font
 					(size 1 1)
@@ -4302,7 +4332,7 @@
 			(at 0 1 0)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "12843724-7aea-43b0-bc0b-52d7daf794e7")
+			(uuid "65851e4e-74d9-4ff0-842c-4735ad8e455a")
 			(effects
 				(font
 					(size 1 1)
@@ -4315,7 +4345,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c3e2c72e-4b7e-43d0-b526-a2db2e480bbe")
+			(uuid "140dfb99-d965-4ab9-96c9-c1a03a58810f")
 			(effects
 				(font
 					(size 1 1)
@@ -4328,7 +4358,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "eabbf9c9-9d5e-4055-a469-5031226cb174")
+			(uuid "c6758b8e-f551-4985-8712-20b81c30ebea")
 			(effects
 				(font
 					(size 1 1)
@@ -4341,7 +4371,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b87de666-cf1b-43af-96ce-a367bc4cc588")
+			(uuid "016c5d61-3331-44d0-b7fa-7b2527c3d78e")
 			(effects
 				(font
 					(size 1 1)
@@ -4354,23 +4384,52 @@
 		(sheetname "Root")
 		(sheetfile "nametag.kicad_sch")
 		(attr smd)
-		(fp_poly
-			(pts
-				(xy -0.9 -0.9) (xy 0.9 -0.9) (xy 0.9 0.9) (xy -0.9 0.9)
+		(fp_line
+			(start -1 -2.3)
+			(end 1 -2.3)
+			(stroke
+				(width 0.1)
+				(type default)
 			)
+			(layer "F.SilkS")
+			(uuid "dd2582b7-04de-46c3-93eb-ceca327f02ce")
+		)
+		(fp_line
+			(start -1 0.5)
+			(end -1 -2.3)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "8d875bc6-2b76-4af7-86fb-be9e7c3f039a")
+		)
+		(fp_line
+			(start 1 -2.3)
+			(end 1 0.5)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "a59afc2e-2aa4-470c-9e0b-cb4faf80d6f0")
+		)
+		(fp_rect
+			(start -0.9 -0.9)
+			(end 0.9 0.9)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
 			(fill none)
 			(layer "Edge.Cuts")
-			(uuid "33ebb640-54cd-46b6-9cff-791c793ce1d3")
+			(uuid "274a5d0a-8282-41a5-ab1c-40d6eadb5ff9")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 0)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "76f68c9a-fdf7-4391-8714-f8d792d4efd3")
+			(uuid "6b25dd75-4163-469e-846d-93c5f7e192fc")
 			(effects
 				(font
 					(size 1 1)
@@ -4379,7 +4438,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at 0 -1.550001)
+			(at 0 -1.55)
 			(size 1.8 1.2)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
@@ -4387,10 +4446,10 @@
 			(pinfunction "K")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "52b1715c-6af5-484d-9bab-807d0710a332")
+			(uuid "7d243002-7a52-449f-b9d3-5b7cd932a81c")
 		)
 		(pad "2" smd roundrect
-			(at 0 1.550001)
+			(at 0 1.55)
 			(size 1.8 1.2)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
@@ -4398,7 +4457,7 @@
 			(pinfunction "A")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "a71428a4-2666-4d42-b1ce-53e12ab47cd9")
+			(uuid "9d72fd6f-ac03-4960-9f2e-51d1b1e8838c")
 		)
 		(model "${KIPRJMOD}/libraries/g-LED_SMD.pretty/LTST-C230.step"
 			(offset
@@ -4422,7 +4481,7 @@
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "cce1bee8-3cff-43fe-905d-f6bb10697bf1")
+			(uuid "9dea7d65-6762-4e5a-a4c9-e9a16d8d74c3")
 			(effects
 				(font
 					(size 1 1)
@@ -4434,7 +4493,7 @@
 			(at 0 1 -45)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "5aceeab5-6371-4512-9e2c-d4cddecf4cfc")
+			(uuid "4f2656ba-fadb-433b-940c-b19fd143c099")
 			(effects
 				(font
 					(size 1 1)
@@ -4447,7 +4506,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0682412b-ae6c-41fc-92ee-5e4b247c14d1")
+			(uuid "870f8492-3788-44df-aa59-af93f695d083")
 			(effects
 				(font
 					(size 1 1)
@@ -4460,7 +4519,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b1fd41dd-d776-4742-8d28-dd3498da6b11")
+			(uuid "5acbfb98-64da-4d8c-9f86-2df5b3d73060")
 			(effects
 				(font
 					(size 1 1)
@@ -4473,7 +4532,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9d606b9e-b074-4bbd-b7f2-d5a0b76f67df")
+			(uuid "b0d830fe-1cd9-4e59-97af-2489945db979")
 			(effects
 				(font
 					(size 1 1)
@@ -4486,6 +4545,36 @@
 		(sheetname "Root")
 		(sheetfile "nametag.kicad_sch")
 		(attr smd)
+		(fp_line
+			(start -1 0.5)
+			(end -1 -2.3)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "436c924e-6bbf-48a2-8954-51729640f28a")
+		)
+		(fp_line
+			(start -1 -2.3)
+			(end 1 -2.3)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "2b4f372d-fc3f-4e7f-8976-ac32483120ed")
+		)
+		(fp_line
+			(start 1 -2.3)
+			(end 1 0.5)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "26f5e508-42d9-46ed-8dc1-8667a3598d35")
+		)
 		(fp_poly
 			(pts
 				(xy -0.9 -0.9) (xy 0.9 -0.9) (xy 0.9 0.9) (xy -0.9 0.9)
@@ -4496,13 +4585,13 @@
 			)
 			(fill none)
 			(layer "Edge.Cuts")
-			(uuid "a967de08-6708-4adb-9431-40600041723e")
+			(uuid "adc23f05-5935-462a-8cb6-0b91de906d9f")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 -45)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "e2a6f3b6-e22c-4f24-b6e5-ebeb44b732f3")
+			(uuid "4b4e6e92-ae06-421f-8141-d983858fa96f")
 			(effects
 				(font
 					(size 1 1)
@@ -4519,7 +4608,7 @@
 			(pinfunction "K")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "28e9ccd0-bc77-4c28-b638-b6262d8864ca")
+			(uuid "53664087-496c-4846-85e4-d281ef2038e0")
 		)
 		(pad "2" smd roundrect
 			(at 0 1.550001 315)
@@ -4530,7 +4619,7 @@
 			(pinfunction "A")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "b3bc0521-229e-4983-957f-f3d3c9ada5ed")
+			(uuid "bcad1f1d-554a-4a28-a22e-5415ad782f87")
 		)
 		(model "${KIPRJMOD}/libraries/g-LED_SMD.pretty/LTST-C230.step"
 			(offset
@@ -4768,7 +4857,7 @@
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "594c2969-22e5-4ff3-827e-330b7fca5ac0")
+			(uuid "e900c048-39a1-4db4-9625-48bb3c3ff460")
 			(effects
 				(font
 					(size 1 1)
@@ -4780,7 +4869,7 @@
 			(at 0 1 45)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "bac3402f-52cf-47bb-ba86-df3974ffab98")
+			(uuid "796fea02-aa7b-4287-b8eb-26e1dde7d8a1")
 			(effects
 				(font
 					(size 1 1)
@@ -4793,7 +4882,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8ffaa070-6c24-448c-b958-cd6421f4637f")
+			(uuid "1044bf43-73c8-432f-b66f-2580bf4c0b18")
 			(effects
 				(font
 					(size 1 1)
@@ -4806,7 +4895,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "406da21f-2932-46e0-8df5-b3713c5e0bcd")
+			(uuid "f08ca5a5-e888-416e-b9f2-e39ac2cd5524")
 			(effects
 				(font
 					(size 1 1)
@@ -4819,7 +4908,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "16ae9347-ef0e-435e-b9cb-457ad560affd")
+			(uuid "d1da1037-81ae-4b3b-af85-3513cd3a1b32")
 			(effects
 				(font
 					(size 1 1)
@@ -4832,6 +4921,36 @@
 		(sheetname "Root")
 		(sheetfile "nametag.kicad_sch")
 		(attr smd)
+		(fp_line
+			(start -1 -2.3)
+			(end 1 -2.3)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "2565931c-e48d-468d-b911-306338a93654")
+		)
+		(fp_line
+			(start 1 -2.3)
+			(end 1 0.5)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "af335a67-54ad-42c0-bb5a-ee543f096057")
+		)
+		(fp_line
+			(start -1 0.5)
+			(end -1 -2.3)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "be9f9e13-7467-47ce-906a-8d9fa6e5a67f")
+		)
 		(fp_poly
 			(pts
 				(xy -0.9 -0.9) (xy 0.9 -0.9) (xy 0.9 0.9) (xy -0.9 0.9)
@@ -4842,13 +4961,13 @@
 			)
 			(fill none)
 			(layer "Edge.Cuts")
-			(uuid "4a9f1cdb-d4f9-471e-b86f-e7d5415339b2")
+			(uuid "a03c02e3-3df2-46a9-b3df-2bd7a08f8141")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 45)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "dce648b6-223c-49b5-81ea-28a69ccc96d2")
+			(uuid "af048c75-b86b-4d4c-9737-bc5ff0638e05")
 			(effects
 				(font
 					(size 1 1)
@@ -4865,7 +4984,7 @@
 			(pinfunction "K")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "48c53331-599a-4330-a4e8-58c0866458e1")
+			(uuid "acb523b5-2dd0-4189-afa6-ed71c4b1357d")
 		)
 		(pad "2" smd roundrect
 			(at 0 1.550001 45)
@@ -4876,7 +4995,7 @@
 			(pinfunction "A")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "a028b941-8b65-4711-a59d-e4c762c3253f")
+			(uuid "7f765d0d-d4df-4db2-9842-f006555de8b3")
 		)
 		(model "${KIPRJMOD}/libraries/g-LED_SMD.pretty/LTST-C230.step"
 			(offset
@@ -5705,7 +5824,7 @@
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "c5236787-905c-4bcc-ba7a-b4d41cb7dda9")
+			(uuid "55542848-1023-4753-a32d-df503c35de84")
 			(effects
 				(font
 					(size 1 1)
@@ -5717,7 +5836,7 @@
 			(at 0 1 0)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "2f729139-f098-4bd3-a3c4-439eabd69fcb")
+			(uuid "ecb8400c-1156-48b0-9c64-8be2cc77984f")
 			(effects
 				(font
 					(size 1 1)
@@ -5730,7 +5849,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d815775e-557e-424b-b063-5f629cb3cf85")
+			(uuid "3722b3d4-14b5-40b4-98df-13849be25672")
 			(effects
 				(font
 					(size 1 1)
@@ -5743,7 +5862,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f5f8749f-fe20-4e9e-bf4e-361331f98073")
+			(uuid "fd6aef4f-5c11-4866-ab0d-dfa9d8e26a82")
 			(effects
 				(font
 					(size 1 1)
@@ -5756,7 +5875,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "614db894-cbbd-427a-b696-8b8c38452a26")
+			(uuid "fbb786e5-5c33-4083-ade2-191884768923")
 			(effects
 				(font
 					(size 1 1)
@@ -5769,6 +5888,36 @@
 		(sheetname "Root")
 		(sheetfile "nametag.kicad_sch")
 		(attr smd)
+		(fp_line
+			(start -1 -2.3)
+			(end 1 -2.3)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "c03111a5-53c5-4828-94ff-77730ab50bfd")
+		)
+		(fp_line
+			(start -1 0.5)
+			(end -1 -2.3)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "79d08628-5aa1-41e0-a0be-b04c32d804fe")
+		)
+		(fp_line
+			(start 1 -2.3)
+			(end 1 0.5)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "98d8eeda-0c8f-494c-8307-4a7d51c9ca69")
+		)
 		(fp_rect
 			(start -0.9 -0.9)
 			(end 0.9 0.9)
@@ -5778,13 +5927,13 @@
 			)
 			(fill none)
 			(layer "Edge.Cuts")
-			(uuid "2078d40d-083f-4f32-9d44-b322f3957929")
+			(uuid "386bab10-e54a-4cbc-a37b-a98f59bc2ae7")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 0)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "d5bc3d60-189e-41ee-ad34-8ce3eb584f5c")
+			(uuid "8e161799-12e2-416e-97ff-3c6e2c0437a2")
 			(effects
 				(font
 					(size 1 1)
@@ -5801,7 +5950,7 @@
 			(pinfunction "K")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "47742d18-ba05-4d1d-9f79-0f55a26827c1")
+			(uuid "429ca17d-679c-4583-b9ff-0291a754f4e4")
 		)
 		(pad "2" smd roundrect
 			(at 0 1.55)
@@ -5812,7 +5961,7 @@
 			(pinfunction "A")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "03510a28-45d7-43f5-9f60-ae1f67716115")
+			(uuid "aa8ef86e-4ff5-43d6-939c-2f5d529b69ac")
 		)
 		(model "${KIPRJMOD}/libraries/g-LED_SMD.pretty/LTST-C230.step"
 			(offset
@@ -5836,7 +5985,7 @@
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "37b3f2b5-bd7d-459a-a42b-a90d115f0249")
+			(uuid "1d13a721-dfb8-4525-aa1b-2cd3f45fe6ff")
 			(effects
 				(font
 					(size 1 1)
@@ -5848,7 +5997,7 @@
 			(at 0 1 180)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "8cb9101b-e9f7-4be5-af3e-45c320a2bd74")
+			(uuid "55e51e99-a5a6-44d7-803c-c5065f5713e7")
 			(effects
 				(font
 					(size 1 1)
@@ -5861,7 +6010,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1c358f2f-444d-4ab1-9301-8887db3d36d6")
+			(uuid "34fd51d7-7e22-4ff6-974e-8f053fb15949")
 			(effects
 				(font
 					(size 1 1)
@@ -5874,7 +6023,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "94bd45e3-fcdf-4375-be31-d18cbecf2c0b")
+			(uuid "ec76b266-7adc-43b7-8829-ef83295d14db")
 			(effects
 				(font
 					(size 1 1)
@@ -5887,7 +6036,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "760f5210-26fc-4429-b763-bec0cdab851b")
+			(uuid "a5dc6247-a58d-413a-885e-a4924d92e311")
 			(effects
 				(font
 					(size 1 1)
@@ -5900,23 +6049,52 @@
 		(sheetname "Root")
 		(sheetfile "nametag.kicad_sch")
 		(attr smd)
-		(fp_poly
-			(pts
-				(xy -0.9 -0.9) (xy 0.9 -0.9) (xy 0.9 0.9) (xy -0.9 0.9)
+		(fp_line
+			(start 1 -2.3)
+			(end 1 0.5)
+			(stroke
+				(width 0.1)
+				(type default)
 			)
+			(layer "F.SilkS")
+			(uuid "1a59cc2a-a254-4a92-9d8e-660c178d071b")
+		)
+		(fp_line
+			(start -1 0.5)
+			(end -1 -2.3)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "68977581-419b-4c35-8767-b03ad42eaf1f")
+		)
+		(fp_line
+			(start -1 -2.3)
+			(end 1 -2.3)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "faac4cff-1bc6-4167-964f-54770a591a81")
+		)
+		(fp_rect
+			(start -0.9 -0.9)
+			(end 0.9 0.9)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
 			(fill none)
 			(layer "Edge.Cuts")
-			(uuid "2f4c7209-d046-408b-8e98-6bb7496c112c")
+			(uuid "9983abbd-569a-4f41-95fa-3da52f83ea3d")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 180)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "c96542d6-443c-4419-bfaa-c8fd7037b3ab")
+			(uuid "4fbc4364-ba8c-4653-b64c-9d2899f586b2")
 			(effects
 				(font
 					(size 1 1)
@@ -5925,7 +6103,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at 0 -1.550001 180)
+			(at 0 -1.55 180)
 			(size 1.8 1.2)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
@@ -5933,10 +6111,10 @@
 			(pinfunction "K")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "8dd928d4-9702-4545-a8c6-be4a6fce540c")
+			(uuid "864338a0-d356-4aea-96c8-20fdd986653b")
 		)
 		(pad "2" smd roundrect
-			(at 0 1.550001 180)
+			(at 0 1.55 180)
 			(size 1.8 1.2)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
@@ -5944,7 +6122,7 @@
 			(pinfunction "A")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "1249cb9b-02a7-433a-83dc-824354f2001c")
+			(uuid "65b2d541-1a32-4a28-a319-5dfcb55d95e4")
 		)
 		(model "${KIPRJMOD}/libraries/g-LED_SMD.pretty/LTST-C230.step"
 			(offset
@@ -10125,7 +10303,7 @@
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "9658d3f9-8fd3-47ca-8778-56762d03c39f")
+			(uuid "fd463450-6556-4e9c-911a-0c17fd72612f")
 			(effects
 				(font
 					(size 1 1)
@@ -10137,7 +10315,7 @@
 			(at 0 1 90)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "c4b16176-a4d4-4aa5-a28a-723f4878a2fe")
+			(uuid "014517d6-a837-4dd7-a3e3-863af6c6499c")
 			(effects
 				(font
 					(size 1 1)
@@ -10150,7 +10328,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2663b126-f0bc-430b-ab8e-ce8ce704c78d")
+			(uuid "4112f1e7-ffd3-4807-94c4-b59aef5b9e94")
 			(effects
 				(font
 					(size 1 1)
@@ -10163,7 +10341,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "29ebbd63-5232-420f-9c25-286e147673ca")
+			(uuid "b2b8e785-7bb0-4c9c-b659-e2a7c75fe581")
 			(effects
 				(font
 					(size 1 1)
@@ -10176,7 +10354,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4674dbd4-ed47-42d2-b33c-47729e1e9f71")
+			(uuid "0ac0b827-7029-4e02-807f-83ece1ede363")
 			(effects
 				(font
 					(size 1 1)
@@ -10189,23 +10367,52 @@
 		(sheetname "Root")
 		(sheetfile "nametag.kicad_sch")
 		(attr smd)
-		(fp_poly
-			(pts
-				(xy -0.9 -0.9) (xy 0.9 -0.9) (xy 0.9 0.9) (xy -0.9 0.9)
+		(fp_line
+			(start 1 -2.3)
+			(end 1 0.5)
+			(stroke
+				(width 0.1)
+				(type default)
 			)
+			(layer "F.SilkS")
+			(uuid "8b1fe878-e96e-49c7-97a0-db184ecb1c49")
+		)
+		(fp_line
+			(start -1 -2.3)
+			(end 1 -2.3)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "15cca4d8-d4a1-41c6-838b-2d7d11df11c2")
+		)
+		(fp_line
+			(start -1 0.5)
+			(end -1 -2.3)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "2d2ba729-e0e2-405d-a0e2-f528dfaf382b")
+		)
+		(fp_rect
+			(start -0.9 -0.9)
+			(end 0.9 0.9)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
 			(fill none)
 			(layer "Edge.Cuts")
-			(uuid "41ad0466-3ac9-42fe-9580-09af4a879fa8")
+			(uuid "d959aec1-6e25-4f85-9a5f-050fd5b0cc65")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 90)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "dd7bd565-be6c-4d00-98a7-4acbc29f751c")
+			(uuid "82ea0966-5878-48c4-bfcb-4387dfce6d51")
 			(effects
 				(font
 					(size 1 1)
@@ -10214,7 +10421,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at 0 -1.550001 90)
+			(at 0 -1.55 90)
 			(size 1.8 1.2)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
@@ -10222,10 +10429,10 @@
 			(pinfunction "K")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "13e0904e-8524-4205-91ef-05ad236319c8")
+			(uuid "0407251e-c7d2-4f8b-945e-8cf14c197d3a")
 		)
 		(pad "2" smd roundrect
-			(at 0 1.550001 90)
+			(at 0 1.55 90)
 			(size 1.8 1.2)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
@@ -10233,7 +10440,7 @@
 			(pinfunction "A")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "04b443c4-cd6a-4b5b-8cbc-c77be85dd836")
+			(uuid "8dd142c3-b675-49c4-8e52-01a37aed3048")
 		)
 		(model "${KIPRJMOD}/libraries/g-LED_SMD.pretty/LTST-C230.step"
 			(offset
@@ -13495,7 +13702,7 @@
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "15794fdd-0ad9-4fd1-bc65-398e0662fc20")
+			(uuid "851ede08-f022-4b21-99ca-931aacedf87a")
 			(effects
 				(font
 					(size 1 1)
@@ -13507,7 +13714,7 @@
 			(at 0 1 135)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "94503d10-c6f2-4e7c-858d-5cff23899771")
+			(uuid "8942cacc-c2c7-4877-9802-34b242a08ca5")
 			(effects
 				(font
 					(size 1 1)
@@ -13520,7 +13727,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "cb6f3988-fb7b-48d8-b860-061b264ee4a0")
+			(uuid "3c24819a-534b-4a4e-9fa5-8f3fd5de851d")
 			(effects
 				(font
 					(size 1 1)
@@ -13533,7 +13740,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "85b268df-20f1-4150-a702-5172420ba770")
+			(uuid "932f9cc5-1031-45a8-a3c0-93356f27ec3a")
 			(effects
 				(font
 					(size 1 1)
@@ -13546,7 +13753,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "92e18b0b-f697-42b4-810f-56d2350200c3")
+			(uuid "3a437086-e174-4e01-b023-b20996a3be2d")
 			(effects
 				(font
 					(size 1 1)
@@ -13559,6 +13766,36 @@
 		(sheetname "Root")
 		(sheetfile "nametag.kicad_sch")
 		(attr smd)
+		(fp_line
+			(start 1 -2.3)
+			(end 1 0.5)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "7136da1e-e41e-4022-8996-fe9bc6103b90")
+		)
+		(fp_line
+			(start -1 -2.3)
+			(end 1 -2.3)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "4e2d2e08-c6a1-4def-ae76-ff80fbef1eb3")
+		)
+		(fp_line
+			(start -1 0.5)
+			(end -1 -2.3)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "3a861b7b-3c2a-495c-9953-afb0982280ed")
+		)
 		(fp_poly
 			(pts
 				(xy -0.9 -0.9) (xy 0.9 -0.9) (xy 0.9 0.9) (xy -0.9 0.9)
@@ -13569,13 +13806,13 @@
 			)
 			(fill none)
 			(layer "Edge.Cuts")
-			(uuid "60c7cffe-f7a6-4b26-b75e-be9b2f7774d4")
+			(uuid "844da52b-c2f1-4c87-9c53-1176f732c541")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 135)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "e59ed46a-8b48-4f70-853e-8eaeb6ffaecd")
+			(uuid "d33f5e59-eac5-4f77-8867-1dabc6831039")
 			(effects
 				(font
 					(size 1 1)
@@ -13592,7 +13829,7 @@
 			(pinfunction "K")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "54a45b5e-c820-4757-aa40-f3fdbcd0dac4")
+			(uuid "7415ffd8-d255-44fb-bb47-2894c94aa2e2")
 		)
 		(pad "2" smd roundrect
 			(at 0 1.550001 135)
@@ -13603,7 +13840,7 @@
 			(pinfunction "A")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "99d39696-f5cc-4804-8a3b-126159aaf83d")
+			(uuid "2ab463aa-868b-485f-b2b8-4ba6b807483d")
 		)
 		(model "${KIPRJMOD}/libraries/g-LED_SMD.pretty/LTST-C230.step"
 			(offset
@@ -13841,7 +14078,7 @@
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "435ab2cb-ceec-483a-84e8-5e63c549f37e")
+			(uuid "3b00578b-9942-459c-b1ec-dbc5806a3bcc")
 			(effects
 				(font
 					(size 1 1)
@@ -13853,7 +14090,7 @@
 			(at 0 1 -135)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "f0e1b54b-0920-49b7-a511-1b7636652b5d")
+			(uuid "9c7785b9-2e23-41c7-855b-c0ce699d2e42")
 			(effects
 				(font
 					(size 1 1)
@@ -13866,7 +14103,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "55ef6e71-5e08-4bd3-a260-2ca4f2c54821")
+			(uuid "39f6666b-b7fb-4e6f-836b-54adca9397d0")
 			(effects
 				(font
 					(size 1 1)
@@ -13879,7 +14116,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c169975f-a25d-4a25-b196-c57b42e5ee4c")
+			(uuid "9ccb3e3b-1315-425a-96c6-ce262158d92b")
 			(effects
 				(font
 					(size 1 1)
@@ -13892,7 +14129,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a6abb76c-9883-4316-9154-b834b0e28c33")
+			(uuid "17ac8bcd-9d3c-40a0-a5ac-391018f50c98")
 			(effects
 				(font
 					(size 1 1)
@@ -13905,6 +14142,36 @@
 		(sheetname "Root")
 		(sheetfile "nametag.kicad_sch")
 		(attr smd)
+		(fp_line
+			(start -1 0.5)
+			(end -1 -2.3)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "550da3b8-aa67-45bb-9572-54f47871cb9d")
+		)
+		(fp_line
+			(start 1 -2.3)
+			(end 1 0.5)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "4b57a054-0254-4d48-8e32-a811c6cd066b")
+		)
+		(fp_line
+			(start -1 -2.3)
+			(end 1 -2.3)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "80bf8984-9829-4612-923a-49d09092eec0")
+		)
 		(fp_poly
 			(pts
 				(xy -0.9 -0.9) (xy 0.9 -0.9) (xy 0.9 0.9) (xy -0.9 0.9)
@@ -13915,13 +14182,13 @@
 			)
 			(fill none)
 			(layer "Edge.Cuts")
-			(uuid "42e59c42-f3bf-4968-bd5b-9c7a5aed9547")
+			(uuid "680c3a7c-c9cb-49e0-b01c-f9148ddcab7e")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 -135)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "ca758e0e-fadf-43c5-b109-e2e139a8b2ba")
+			(uuid "f9dfc048-8866-40d5-9ad2-b32d7964923f")
 			(effects
 				(font
 					(size 1 1)
@@ -13938,7 +14205,7 @@
 			(pinfunction "K")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "ce63efcd-eee7-4f8e-b590-30e968788722")
+			(uuid "731228cc-ee76-4b48-a74f-b50577676bed")
 		)
 		(pad "2" smd roundrect
 			(at 0 1.550001 225)
@@ -13949,7 +14216,7 @@
 			(pinfunction "A")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "a2d31238-9697-4c20-a1b3-c902266a9812")
+			(uuid "070ff27f-c4b0-46af-9f3b-0a1cd6167e4f")
 		)
 		(model "${KIPRJMOD}/libraries/g-LED_SMD.pretty/LTST-C230.step"
 			(offset
@@ -16118,7 +16385,7 @@
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "c323d2e0-402d-4fb3-bcdd-6d218a890b79")
+			(uuid "053eae99-d081-4978-9014-16998d08fbe3")
 			(effects
 				(font
 					(size 1 1)
@@ -16130,7 +16397,7 @@
 			(at 0 1 -90)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "f166ed52-2b04-4673-b7a8-6e575974f252")
+			(uuid "782e56f7-8899-47b4-a42d-77d25a44cbd9")
 			(effects
 				(font
 					(size 1 1)
@@ -16143,7 +16410,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "94e45432-839c-471e-af7d-0a418653f9c9")
+			(uuid "160dee47-2105-4308-a2d2-df63aa39627a")
 			(effects
 				(font
 					(size 1 1)
@@ -16156,7 +16423,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2ad651d3-a29c-4ad0-97a1-2894dc60924d")
+			(uuid "292f352f-4042-410f-9e57-cb136b017420")
 			(effects
 				(font
 					(size 1 1)
@@ -16169,7 +16436,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "950454f2-7b4b-4a2b-99e8-da8579ff02db")
+			(uuid "a0453b9b-3015-4bca-a52c-a9e11877b4c1")
 			(effects
 				(font
 					(size 1 1)
@@ -16182,23 +16449,52 @@
 		(sheetname "Root")
 		(sheetfile "nametag.kicad_sch")
 		(attr smd)
-		(fp_poly
-			(pts
-				(xy -0.9 -0.9) (xy 0.9 -0.9) (xy 0.9 0.9) (xy -0.9 0.9)
+		(fp_line
+			(start -1 0.5)
+			(end -1 -2.3)
+			(stroke
+				(width 0.1)
+				(type default)
 			)
+			(layer "F.SilkS")
+			(uuid "8cef67ae-b039-4a02-9d31-1d30e9050af5")
+		)
+		(fp_line
+			(start -1 -2.3)
+			(end 1 -2.3)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "b4ddb7b2-b8ca-4c82-9eb7-cfcfca9d63d9")
+		)
+		(fp_line
+			(start 1 -2.3)
+			(end 1 0.5)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "cab33004-3feb-4b36-a6a3-67f49a273ba6")
+		)
+		(fp_rect
+			(start -0.9 -0.9)
+			(end 0.9 0.9)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
 			(fill none)
 			(layer "Edge.Cuts")
-			(uuid "068bb0ae-31a6-4060-b98f-d9ff7322b41d")
+			(uuid "aeac05ae-0c83-45e9-a8dd-6bf122051399")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 -90)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "9f1d2810-c8b1-4c13-aa62-1a988243b713")
+			(uuid "a1c87f8c-0227-4a87-819e-6507824184d3")
 			(effects
 				(font
 					(size 1 1)
@@ -16207,7 +16503,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at 0 -1.550001 270)
+			(at 0 -1.55 270)
 			(size 1.8 1.2)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
@@ -16215,10 +16511,10 @@
 			(pinfunction "K")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "e7076881-4469-4731-af33-e9007024e55f")
+			(uuid "285d7d0e-9784-476e-8ad9-89c280fb5f9b")
 		)
 		(pad "2" smd roundrect
-			(at 0 1.550001 270)
+			(at 0 1.55 270)
 			(size 1.8 1.2)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
@@ -16226,7 +16522,7 @@
 			(pinfunction "A")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "f57bc486-3c52-4dc9-a21a-b3696fc8fec8")
+			(uuid "4c722796-f89d-4f39-a746-e281a57fefdc")
 		)
 		(model "${KIPRJMOD}/libraries/g-LED_SMD.pretty/LTST-C230.step"
 			(offset
@@ -16249,7 +16545,7 @@
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "c68ce351-9d2b-4070-8386-46e8723194c4")
+			(uuid "2e3faf39-7315-461c-8567-305731871b5b")
 			(effects
 				(font
 					(size 1 1)
@@ -16261,7 +16557,7 @@
 			(at 0 1 -90)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "48f9f938-9c83-421e-9095-a405f635bf7e")
+			(uuid "9c45f7cb-b39b-4c60-b2e4-dab91a2ddec4")
 			(effects
 				(font
 					(size 1 1)
@@ -16274,7 +16570,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6b661186-7c6a-46c3-85a7-5854ee5f8815")
+			(uuid "c742eead-764d-4ea8-85d7-efd82745aae7")
 			(effects
 				(font
 					(size 1 1)
@@ -16287,7 +16583,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f88ccaa1-61a3-4a64-acaa-c70512a472b1")
+			(uuid "28aefa06-111f-4d3e-8d40-bc0ca28c811d")
 			(effects
 				(font
 					(size 1 1)
@@ -16300,7 +16596,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a90725fd-27be-4a62-a960-214b68646265")
+			(uuid "24ff0330-42ec-4e1c-a672-683d26520d20")
 			(effects
 				(font
 					(size 1 1)
@@ -16313,23 +16609,52 @@
 		(sheetname "Root")
 		(sheetfile "nametag.kicad_sch")
 		(attr smd)
-		(fp_poly
-			(pts
-				(xy -0.9 -0.9) (xy 0.9 -0.9) (xy 0.9 0.9) (xy -0.9 0.9)
+		(fp_line
+			(start -1 0.5)
+			(end -1 -2.3)
+			(stroke
+				(width 0.1)
+				(type default)
 			)
+			(layer "F.SilkS")
+			(uuid "15ca3425-40ca-4634-8511-8a653a8b6d85")
+		)
+		(fp_line
+			(start -1 -2.3)
+			(end 1 -2.3)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "bdaab3ee-6bc1-4d6b-949a-cb5851c48952")
+		)
+		(fp_line
+			(start 1 -2.3)
+			(end 1 0.5)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "725cd779-43eb-4a9f-92c8-df822ca1f73c")
+		)
+		(fp_rect
+			(start -0.9 -0.9)
+			(end 0.9 0.9)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
 			(fill none)
 			(layer "Edge.Cuts")
-			(uuid "751d91bd-37bd-4a0c-a27c-96fe18dd0866")
+			(uuid "147b2616-5ef0-43c8-b57e-a70aff439956")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 -90)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "20df448b-983e-4e03-9137-238fd42e6bde")
+			(uuid "b5b89d28-3d01-4df1-b273-92ada8d60f96")
 			(effects
 				(font
 					(size 1 1)
@@ -16338,7 +16663,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at 0 -1.550001 270)
+			(at 0 -1.55 270)
 			(size 1.8 1.2)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
@@ -16346,10 +16671,10 @@
 			(pinfunction "K")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "ed482b6b-2e42-4bf4-a124-ef5677ef9be4")
+			(uuid "010d0866-0ed6-4bf7-8d5c-14911eb80055")
 		)
 		(pad "2" smd roundrect
-			(at 0 1.550001 270)
+			(at 0 1.55 270)
 			(size 1.8 1.2)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
@@ -16357,7 +16682,7 @@
 			(pinfunction "A")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "36a0b385-8d53-4569-8817-dc983411da76")
+			(uuid "e14f0bc1-fd08-4e97-be19-9ee9de4de383")
 		)
 		(model "${KIPRJMOD}/libraries/g-LED_SMD.pretty/LTST-C230.step"
 			(offset

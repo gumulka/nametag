@@ -6736,7 +6736,7 @@
 		(fields_autoplaced yes)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 0.8 0.8)
 			)
 			(justify left bottom)
 		)
@@ -6835,7 +6835,7 @@
 		(fields_autoplaced yes)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 0.8 0.8)
 			)
 			(justify left bottom)
 		)
@@ -13495,7 +13495,7 @@
 				)
 			)
 		)
-		(property "Value" "Crystal_GND24"
+		(property "Value" "32Mhz"
 			(at 195.58 97.79 90)
 			(effects
 				(font
