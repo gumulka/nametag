@@ -12,24 +12,27 @@ static const struct gpio_dt_spec button = GPIO_DT_SPEC_GET_OR(DT_ALIAS(sw0), gpi
 static struct gpio_callback button_cb_data;
 
 static const struct device *const display = DEVICE_DT_GET(DT_CHOSEN(zephyr_display));
+static const struct gpio_dt_spec enable = GPIO_DT_SPEC_GET(DT_PATH(zephyr_user), enable_gpios);
 
 static int current_image = 0;
 
 typedef int (*image_display)(const struct device *const display);
 
-image_display images[10] = {
+image_display images[] = {
 	serious_name, serious_nick,     serious_full_name,
 	lgbtq_name,   lgbtq_name_extra, fabilicious_turtli,
 };
 
 static void set_display(struct k_work *_work)
 {
+	gpio_pin_set_dt(&enable, 1);
 	clear_display(display);
 	if (current_image < ARRAY_SIZE(images) && images[current_image]) {
 		images[current_image](display);
 	} else {
 		current_image = -1;
 	}
+	gpio_pin_set_dt(&enable, 0);
 }
 K_WORK_DELAYABLE_DEFINE(set_display_work, set_display);
 
@@ -54,6 +57,13 @@ int main(void)
 		LOG_ERR("Could not configure LED.");
 		return 0;
 	}
+
+	if (!gpio_is_ready_dt(&enable)) {
+		LOG_ERR("Could not configure enable pin for display");
+		return -ENODEV;
+	}
+
+	(void)gpio_pin_configure_dt(&enable, GPIO_OUTPUT_INACTIVE);
 
 	if (!device_is_ready(display)) {
 		LOG_WRN("Display device not ready");
